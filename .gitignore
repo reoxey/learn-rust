@@ -1,0 +1,14 @@
+# Build output from the independent exercise crates
+**/target/
+
+# Local OS/editor files
+.DS_Store
+.idea/
+*.swp
+
+# Local secrets
+.env
+.env.*
+!.env.example
+
+# Cargo.lock is deliberately tracked for these binary learning projects.
