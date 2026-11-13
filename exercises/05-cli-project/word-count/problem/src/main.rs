@@ -1,12 +1,13 @@
-// Build a word-count CLI that accepts exactly one file path.
+// Accept exactly one file path from command-line arguments.
 // Read the file using std::fs::read_to_string.
-// Report read failures to stderr and exit with code 1.
-// Report invalid arguments and exit with code 2.
-// Count and print the whitespace-separated words.
+// Count words using the library's count_words() function.
+// Report usage errors with exit code 2 and read errors with exit code 1.
 
 use std::env;
 use std::fs;
 use std::process;
+
+use word_count::count_words;
 
 fn main() {
     let args: Vec<String> = env::args().collect();
@@ -23,7 +24,7 @@ fn main() {
         process::exit(1);
     });
 
-    let word_count = content.split_whitespace().count();
+    let word_count = count_words(&content);
 
     println!("Words: {word_count}");
 }
