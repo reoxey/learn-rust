@@ -1,7 +1,8 @@
 // Build a word-count CLI that accepts exactly one file path.
-// Use std::env::args() to read command-line arguments.
-// Print usage and exit with code 2 for missing or extra arguments.
-// Read the file and print its word count.
+// Read the file using std::fs::read_to_string.
+// Report read failures to stderr and exit with code 1.
+// Report invalid arguments and exit with code 2.
+// Count and print the whitespace-separated words.
 
 use std::env;
 use std::fs;
@@ -18,7 +19,7 @@ fn main() {
     let file_path = &args[1];
 
     let content = fs::read_to_string(file_path).unwrap_or_else(|error| {
-        eprintln!("Error reading file: {error}");
+        eprintln!("Failed to read '{}': {}", file_path, error);
         process::exit(1);
     });
 

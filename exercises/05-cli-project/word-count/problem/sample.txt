@@ -1,2 +1,3 @@
-hello
-mum!
+Hello mum!
+Learning Rust is fun.
+こんにちは 世界
