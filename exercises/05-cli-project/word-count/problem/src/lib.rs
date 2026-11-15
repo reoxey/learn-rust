@@ -11,9 +11,23 @@ mod tests {
     use super::*;
 
     #[test]
-    fn test_count_words() {
-        assert_eq!(count_words("Hello Rust world"), 3);
+    fn test_empty_content() {
         assert_eq!(count_words(""), 0);
-        assert_eq!(count_words("  Rust   is\nfast  "), 3);
+    }
+
+    #[test]
+    fn test_whitespace_only() {
+        assert_eq!(count_words("   \t\n  "), 0);
+    }
+
+    #[test]
+    fn test_repeated_spaces() {
+        assert_eq!(count_words("Rust   is    fast"), 3);
+    }
+
+    #[test]
+    fn test_multiple_lines() {
+        let text = "Rust is fast\nRust is safe\nLearning Rust";
+        assert_eq!(count_words(text), 8);
     }
 }
