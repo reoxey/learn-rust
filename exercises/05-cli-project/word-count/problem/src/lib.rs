@@ -1,9 +1,18 @@
-// Implement count_words(text: &str) -> usize.
-// Count whitespace-separated words using split_whitespace().
-// Keep the function pure and expose it to the binary crate.
+// Extract run(path: &str) -> Result<usize, std::io::Error>.
+// Read the requested file and return its word count.
+// Propagate file-reading errors using the ? operator.
+// Keep word counting separate from file I/O.
+
+use std::fs;
+use std::io;
 
 pub fn count_words(text: &str) -> usize {
     text.split_whitespace().count()
+}
+
+pub fn run(path: &str) -> Result<usize, io::Error> {
+    let content = fs::read_to_string(path)?;
+    Ok(count_words(&content))
 }
 
 #[cfg(test)]
