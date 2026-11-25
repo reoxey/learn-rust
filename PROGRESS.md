@@ -39,7 +39,7 @@ All lessons start unchecked. Completion means you met the lesson check and can e
 - [ ] Day 35: [Review: finish the CLI](exercises/05-cli-project/05.07-review-finish-the-cli/explainer/readme.md)
 - [x] Day 36: [Iterators](exercises/06-concurrency/06.01-iterators/explainer/readme.md)
 - [x] Day 37: [Closures](exercises/06-concurrency/06.02-closures/explainer/readme.md)
-- [ ] Day 38: [Threads and move](exercises/06-concurrency/06.03-threads-and-move/explainer/readme.md)
+- [x] Day 38: [Threads and move](exercises/06-concurrency/06.03-threads-and-move/explainer/readme.md)
 - [ ] Day 39: [Channels](exercises/06-concurrency/06.04-channels/explainer/readme.md)
 - [ ] Day 40: [Shared state](exercises/06-concurrency/06.05-shared-state/explainer/readme.md)
 - [ ] Day 41: [Send and Sync](exercises/06-concurrency/06.06-send-and-sync/explainer/readme.md)
