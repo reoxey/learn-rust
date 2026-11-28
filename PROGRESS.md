@@ -41,7 +41,7 @@ All lessons start unchecked. Completion means you met the lesson check and can e
 - [x] Day 37: [Closures](exercises/06-concurrency/06.02-closures/explainer/readme.md)
 - [x] Day 38: [Threads and move](exercises/06-concurrency/06.03-threads-and-move/explainer/readme.md)
 - [x] Day 39: [Channels](exercises/06-concurrency/06.04-channels/explainer/readme.md)
-- [ ] Day 40: [Shared state](exercises/06-concurrency/06.05-shared-state/explainer/readme.md)
+- [x] Day 40: [Shared state](exercises/06-concurrency/06.05-shared-state/explainer/readme.md)
 - [ ] Day 41: [Send and Sync](exercises/06-concurrency/06.06-send-and-sync/explainer/readme.md)
 - [ ] Day 42: [Review: choose concurrency style](exercises/06-concurrency/06.07-review-choose-concurrency-style/explainer/readme.md)
 - [ ] Day 43: [TCP project: one connection](exercises/07-networking/07.01-tcp-project-one-connection/explainer/readme.md)
